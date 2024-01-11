@@ -1,0 +1,152 @@
+body{
+    margin: 0px;
+    font-family: 'Poppins';
+    background-color: var(--black);
+}
+:root{
+    --black:#0C151D;
+    --white:#F1F2F4;
+    --light-black:#171F26;
+    --gray:#A3ABB2;
+    --yellow:#FFE071;
+    --sm:14px;
+    --md:20px;
+    --lg:60px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--black);
+    color: var(--white);
+}
+.profile{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.icon{
+    align-items: center;
+    padding: 6px;
+    border-radius: 50%;
+    background-color: var(--yellow);
+    margin: 5px 30px 5px 30px;
+}
+.icon-int{
+    padding: 5px;
+    border-radius: 50%;
+    background-color: white;
+    align-items: center;
+}
+.icon-int img{
+    width: 190px;
+    height: 190px;
+}
+.profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: initial;
+    margin:15px 0px 0px 0px;
+    padding: 0px;
+}
+.name{
+    margin-bottom: 0px;
+    padding: 0px;
+}
+.profession{
+    margin: 0px;
+    padding: 0px;
+    color: var(--gray);
+}
+.redes{
+    display: flex;
+    flex-direction: initial;
+    gap:15px;
+    margin-top:10px;
+}
+.info{
+    display: flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-top: 5px;
+}
+.info-text{
+    font-size: var(--md);
+    color: var(--gray);
+    text-align: center;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    margin: 15px 5px;
+}
+.download{
+    display: flex;
+    gap: 10px;
+    background-color: var(--yellow);
+    margin-right: 10px;
+    border-radius: 8px;
+    color: var(--black);
+    font-size: var(--sm);
+    padding: 3px 35px;
+}
+.contact{
+    background-color: var(--light-black);
+    color: var(--gray);
+    font-size: var(--sm);
+    margin-left: 10px;
+    border-radius: 8px;
+    padding: 6px 40px;
+}
+.more-info{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.port{
+    display: flex;
+    gap: 100px;
+    margin:7px 0px;
+    background-color: var(--light-black);
+    border-radius: 10px;
+    align-items: center;
+    color: var(--gray);
+}
+.portfolio{
+    margin: 10px 0px 10px 10px;
+    padding: 0px 60px;
+    background-color: var(--black);
+    border-radius: 10px;
+}
+.skills{
+    margin: 10px 90px 10px 0px;
+}
+.imagenes{
+    display: grid;
+}
+.imagenes-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 10px 50px 10px;
+    justify-content: center;
+}
+.target{
+    border-radius:10px;
+}
+.target img{
+    border-radius: 10px;
+    width: 362px;
+    height: 226px;
+}
+@media(max-width:720px){
+    .main{
+        height: 100%;
+    }
+    .profile{
+        flex-direction: column;
+    }
+    .profile-info{
+        text-align: center;
+        align-items: center;
+    }
+}
